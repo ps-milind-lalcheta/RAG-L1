@@ -1,0 +1,13 @@
+data_dir: "./data"
+artifacts_dir: "./artifacts"
+index_name: "faiss_index"
+meta_name: "chunks_meta.json"
+model:
+  embedding: "sentence-transformers/all-MiniLM-L6-v2"
+  local_generator: "google/flan-t5-base"
+chunking:
+  chunk_size: 1000
+  chunk_overlap: 150
+retrieval:
+  top_k: 5
+  score_threshold: 0.0
